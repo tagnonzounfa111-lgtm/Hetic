@@ -13,17 +13,23 @@
             background-color: #b91a1a;
             line-height: 1.6;
         }
-
+          
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
+       
 
         a:hover{
        background-color: #b91a1a;
-       border-radius: 1cm;
+    
         }
+         a{
+            border: #0b708f;
+            color: rgb(29, 31, 139);
+        }
+      
         .nav-links li a:hover::after {
     width: 100%;
 }
@@ -37,14 +43,22 @@
             top: 0;
             z-index: 100;
             backdrop-filter: blur(20px);
-            background-color: rgba(255, 255, 255, 0.8);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(image/background.jpg)
+            
         }
+       
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             /* TODO MARDI CSS : Vérifier que c'est du flexbox correct */
+        }
+        div.logo{
+            color: #0b708f;
         }
 
         .logo {
@@ -61,7 +75,7 @@
         }
 
         .nav-links a {
-            color: #1d1d1f;
+            color: hsl(192, 81%, 36%);
             text-decoration: none;
             font-weight: 500;
             font-size: 1rem;
@@ -173,8 +187,9 @@
 
         /* ===== SKILLS SECTION ===== */
         .skills {
-            background-color: #f5f5f7;
+            background-color: #0116229f;
             padding: 120px 0;
+            
         }
 
         .skills-grid {
@@ -194,6 +209,10 @@
             flex: 1;
             min-width: 250px;
             transition: all 0.3s;
+            
+        }
+        div.skill-card{
+            background-image: url(image/background.jpg);
         }
 
         .skill-card:hover {
