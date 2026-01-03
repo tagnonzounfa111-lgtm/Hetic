@@ -182,12 +182,23 @@ h1, h2, h3, .section-title {
         .about-image {
             flex: 1;
             /* TODO MARDI CSS : Ajouter min-height: 400px; */
+            
         }
 
         .about-image img {
-            width: 100%;
-            border-radius: 20px;
+           
+            border-radius: 50px;
             display: block;
+            perspective: 1000px; /* Effet 3D */
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+     
+            transition: 
+            transform 0.6s ease,
+            box-shadow 0.6s ease,
+            filter 0.6s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
         .about-text {
@@ -368,14 +379,16 @@ h1, h2, h3, .section-title {
     border-color: #0071e3;
     box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15);
 }
+   
 * {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
+
         /* ===== CONTACT SECTION / FORM ===== */
         .contact {
-            background-color: white;
+            background-color: rgba(23, 121, 108, 0.253);
             padding: 120px 0;
         }
 
@@ -442,7 +455,7 @@ h1, h2, h3, .section-title {
         }
 
         .submit-button {
-            background-color: #0071e3;
+            background-color: #009be3;
             color: white;
             padding: 14px;
             border: none;
