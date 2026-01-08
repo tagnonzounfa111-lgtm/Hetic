@@ -109,6 +109,7 @@ h1, h2, h3, .section-title {
             align-items: center;
             font-size: 3rem;
             line-height: 1.2;
+            
         }
         .nav-links a {
          position: relative;
@@ -154,6 +155,7 @@ h1, h2, h3, .section-title {
             animation: fadeUp 1.5s ease-out;
         }
         
+        
         .cta-button {
             display: inline-block;
             background-color: green;
@@ -164,7 +166,8 @@ h1, h2, h3, .section-title {
             font-weight: 500;
         
             font-size: 1.05rem;
-            transition: all 0.4s ease;
+            transition: all 0.4s ;
+            
         }
        
         .cta-button:hover {
@@ -267,6 +270,7 @@ h1, h2, h3, .section-title {
             
             
         }
+        
        
 
         div.skill-card{
@@ -299,6 +303,8 @@ h1, h2, h3, .section-title {
             font-weight: 400;
             line-height: 1.6;
         }
+        
+             
         
 
         /* ===== PROJECTS SECTION ===== */
@@ -333,7 +339,7 @@ h1, h2, h3, .section-title {
         }
 
         .project-card:hover {
-            /* TODO MARDI CSS : Ajouter transform: translateY(-4px); */           transform: translateY(-6px);
+            /* TODO MARDI CSS : Ajouter transform: translateY(-4px); */           transform: translateY(-4px);
              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
              background-color:pink;
              
@@ -391,6 +397,7 @@ h1, h2, h3, .section-title {
             /* TODO MARDI CSS : Ajouter color: #0a84ff; */
              opacity: 1;
              transform: translateX(6px);
+             color: #0a84ff;
         }
         .form-group input:focus,
 .form-group textarea:focus {
@@ -431,6 +438,7 @@ h1, h2, h3, .section-title {
         .form-group {
             display: flex;
             flex-direction: column;
+        
             gap: 8px;
         }
         .form-group input:focus,
@@ -474,7 +482,7 @@ h1, h2, h3, .section-title {
         }
 
         .submit-button {
-            background-color: #009be3;
+            background-color: #00e35f;
             color: white;
             padding: 14px;
             border: none;
@@ -669,4 +677,67 @@ h1, h2, h3, .section-title {
         max-width: 100%;
     }
 }
+/* ===== KEYFRAMES ANIMATIONS ===== */
+
+/* Apparition douce vers le haut */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apparition gauche */
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apparition droite */
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Zoom léger */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pulse très léger (CTA) */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
      
