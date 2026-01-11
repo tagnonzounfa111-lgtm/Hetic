@@ -11,7 +11,7 @@
            
              font-family: 'Inter', sans-serif;
              font-weight: 400;
-             color: #1d1d1f;
+             color: beige;
              line-height: 1.7;
              
 }
@@ -25,9 +25,9 @@
             padding: 0 20px;
         }
        
-
+/*Ceci est un hover du bouton découvrir mrs projet*/
         a:hover{
-       background-color:pink;
+       background-color:burlywood;
        border-radius: 35%;
        
         }
@@ -39,7 +39,9 @@
         .nav-links li a:hover::after {
     width: 100%;
 }
+/*Titre principaux et secondaires*/
 h1, h2, h3, .section-title {
+    color:burlywood;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -94,7 +96,9 @@ h1, h2, h3, .section-title {
         }
 
         .nav-links a:hover {
-            /* TODO MARDI CSS : Ajouter opacity: 0.6; */
+            /* TODO MARDI CSS : Ajouter 
+            opacity: 0.6; */
+            opacity: 0.6;
         }
 
         /* ===== HERO SECTION ===== */
@@ -109,12 +113,19 @@ h1, h2, h3, .section-title {
             align-items: center;
             font-size: 3rem;
             line-height: 1.2;
+            background-image: url(image/télécharger.jpg);
+            border-radius: 15px;
+            backdrop-filter: blur(1.5px);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
             
         }
         .nav-links a {
          position: relative;
 }
-
+/*ligne sous les liens de la nav*/
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -125,7 +136,7 @@ h1, h2, h3, .section-title {
     background-color: #0071e3;
     transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* ligne verte au hover*/
 .nav-links a:hover::after {
     width: 100%;
     background-color: green;
@@ -143,7 +154,7 @@ h1, h2, h3, .section-title {
 
         .hero p {
            
-            color: #6f6f74;
+            color: #0c6350;
             margin-bottom: 40px;
             max-width: 600px;
             margin-left: auto;
@@ -151,7 +162,7 @@ h1, h2, h3, .section-title {
             line-height: 1.6;
             font-weight: 400;
             font-size: 1rem;
-            color: #555;
+            color: #2f6781;
             animation: fadeUp 1.5s ease-out;
         }
         
@@ -169,7 +180,7 @@ h1, h2, h3, .section-title {
             transition: all 0.4s ;
             
         }
-       
+       /*Effet au hover du bouton découvrir mes projet*/
         .cta-button:hover {
             /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
             
@@ -200,7 +211,7 @@ h1, h2, h3, .section-title {
         }
 
         .about-image {
-            flex: 1;
+           
             /* TODO MARDI CSS : Ajouter min-height: 400px; */
             
         }
@@ -245,6 +256,9 @@ h1, h2, h3, .section-title {
         .skills {
             background-color: #0116229f;
             padding: 120px 0;
+            background-image: url(image/Programming\ coding\ background.jpg);
+             
+            
             
         }
 
@@ -254,6 +268,7 @@ h1, h2, h3, .section-title {
             margin-top: 60px;
             justify-content: space-around;
             flex-wrap: wrap;
+            
             /* TODO MARDI CSS : Vérifier que c'est du flexbox avec gap */
         }
 
@@ -271,12 +286,12 @@ h1, h2, h3, .section-title {
             
         }
         
-       
+       /*background des skill card*/
 
         div.skill-card{
             background-image: url(image/background.jpg);
         }
-
+        /*Effet au hover des skill card*/
         .skill-card:hover {
             /* TODO MARDI CSS : Ajouter transform: translateY(-8px); */       
           transform: translateY(-10px) scale(1.03);
@@ -284,7 +299,7 @@ h1, h2, h3, .section-title {
           
         }
         
-
+        /*Icone des skill card*/
         .skill-icon {
             font-size: 3.5rem;
             margin-bottom: 20px;
@@ -337,7 +352,7 @@ h1, h2, h3, .section-title {
             overflow: hidden;
 
         }
-
+        /*Effet au hover des project card*/
         .project-card:hover {
             /* TODO MARDI CSS : Ajouter transform: translateY(-4px); */           transform: translateY(-4px);
              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
@@ -349,7 +364,7 @@ h1, h2, h3, .section-title {
             flex-direction: row-reverse;
 
         }
-
+        /*images des projects card*/
         .project-image {
             width: 40%;
             min-height: 300px;
@@ -371,7 +386,7 @@ h1, h2, h3, .section-title {
         .project-content h3 {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #1d1d1f;
+            color: black;
             margin-bottom: 16px;
             letter-spacing: -0.5px;
         }
@@ -392,7 +407,7 @@ h1, h2, h3, .section-title {
             font-size: 1.05rem;
             position: relative;
         }
-
+        /*Effet au hover des project link*/
         .project-link:hover {
             /* TODO MARDI CSS : Ajouter color: #0a84ff; */
              opacity: 1;
@@ -411,10 +426,11 @@ h1, h2, h3, .section-title {
 }
 
 
-
+    
         /* ===== CONTACT SECTION / FORM ===== */
+        /*Contact background image*/
         .contact {
-            background-color: rgba(23, 121, 108, 0.253);
+            background-image:url(image/image\ 3.png);
             padding: 120px 0;
         }
 
@@ -444,7 +460,7 @@ h1, h2, h3, .section-title {
         .form-group input:focus,
         .form-group textarea:focus {
          outline: none;
-         border-color: pink;
+         border-color: burlywood;
          box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15);
         }
 
@@ -480,9 +496,9 @@ h1, h2, h3, .section-title {
             font-size: 1rem;
             color: inherit;
         }
-
+       /* changement de couleur au focus*/
         .submit-button {
-            background-color: #00e35f;
+            background-color: #054d23;
             color: white;
             padding: 14px;
             border: none;
@@ -493,9 +509,10 @@ h1, h2, h3, .section-title {
             transition: all 0.3s;
             margin-top: 16px;
         }
-
+        /*effet au hover du bouton envoyer*/
         .submit-button:hover {
             /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
+            background-color: #0a84ff;
         }
 
         /* ===== FOOTER ===== */
@@ -543,6 +560,7 @@ h1, h2, h3, .section-title {
 
         .social-links a:hover {
             /* TODO MARDI CSS : Ajouter color: #1d1d1f; */
+            color: #1d1d1f;
         }
 
         .footer-bottom {
