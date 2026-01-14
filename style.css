@@ -5,13 +5,14 @@
             padding: 0;
             box-sizing: border-box;
         }
+      
 
         /* ===== STYLES GLOBAUX (Design Apple) ===== */
         body {
            
              font-family: 'Inter', sans-serif;
              font-weight: 400;
-             color: beige;
+             color: rgb(77, 77, 59);
              line-height: 1.7;
              
 }
@@ -376,7 +377,7 @@ h1, h2, h3, .section-title {
             color: white;
             font-size: 1.3rem;
             font-weight: 600;
-            background-image:url(image/footlocker.png);
+            
         }
 
         .project-content {
@@ -481,7 +482,7 @@ h1, h2, h3, .section-title {
             transition: all 0.3s;
         }
 
-        .form-group input:focus,
+       
         .form-group textarea:focus {
             /* TODO MARDI CSS : Ajouter outline: none; border-color: #0071e3; */
         }
